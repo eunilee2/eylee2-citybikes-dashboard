@@ -17,6 +17,20 @@ function parse_network(data){
     // CHALLENGE 1.1
     // Your code here
     // use .set() to add the data to the Map
+    network_data.set("name", data.network.name).set("city", data.network.id).set("latitude", data.network.location.latitude).set("longitude", data.network.location.longitude)
+
+    // display my variables in terminal
+    // .get() is not a function??
+    // console.log(`this is the parse network name ${network_data.get("name")}`)
+    // console.log(`this is the parse network city ${network_data.get("city")}`)
+    // console.log(`this is the parse network latitude ${network_data.get("latitude")}`)
+    // console.log(`this is the parse network longitude ${network_data.get("longitude")}`)
+
+    // display my variables in observable
+    // display(html `this is the parse network name ${network_data["name"]}`)
+    // display(html `this is the parse network city ${network_data["city"]}`)
+    // display(html `this is the parse network latitude ${network_data["latitude"]}`)
+    // display(html `this is the parse network longitude ${network_data["longitude"]}`)
 
     // Convert the Map to a plain object that can be indexed into similar to a dictionary and an array before returning
     return Object.fromEntries(network_data);
@@ -24,6 +38,6 @@ function parse_network(data){
   
   // stores the output of the parsed data
   const network_info = parse_network(pgh_network);
-  
+
   // used for getting the output quickly in the terminal, equivalent to CURL
   process.stdout.write(JSON.stringify(network_info));

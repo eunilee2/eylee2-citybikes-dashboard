@@ -1,10 +1,9 @@
-<!-- PROVIDED: This controls the theme of the page! [OPTIONAL] Feel free to change and play around with the theme to find one you like for this page! -->
-<!-- HINT: Reference the documentation given in the instructions! -->
 ---
 toc: false
 theme: [light, wide, alt, cotton]
 ---
-
+<!-- PROVIDED: This controls the theme of the page! [OPTIONAL] Feel free to change and play around with the theme to find one you like for this page! -->
+<!-- HINT: Reference the documentation given in the instructions! -->
 
 
 <!-- PROVIDED: Header/Page Title -->

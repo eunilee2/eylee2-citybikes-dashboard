@@ -20,9 +20,17 @@ async function json(url) {
           // CHALLENGE 2.1
           // Your code here
           // Add information_field:quantity to the inner dictionary using .set() 
-  
+          station_info.set("name", station.name)
+          station_info.set("free_bikes", station.free_bikes)
+          station_info.set("empty_slots", station.empty_slots)
+          station_info.set("normal_bikes", station.extra.normal_bikes)
+          station_info.set("ebikes", station.extra.ebikes)
+
           // Adds to the station_data dictionary with the key-value pair of name:info (where info is a dictionary)
           station_data.set(station.name, station_info);
+          // check that the map is added correctly by printing all the entries per station
+        //   console.log(`this is the station info set ${station_info.entries()}`)
+        //   display(html `this is the station info set ${station_info.entries()}`)
       });
   
       // Convert Map to plain object for serialization so stringify can be used
