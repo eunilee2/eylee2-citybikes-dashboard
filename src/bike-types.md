@@ -80,12 +80,10 @@ console.log("selected_station_data:", selected_station_data);
 const free_bikes_available = selected_station_data["free_bikes"];
 ```
 
-<div class="grid grid-cols-1">
-  <div class="card" style="display: flex; justify-content: center; align-items: center;">
+<div class="card grid grid-cols-1" style="display: flex; justify-content: center; align-items: center;">
   <!-- conditionally displays a message or a visualization depending on bike availability at selected station -->
     ${free_bikes_available === 0 
       ? html`<h2 style="color: red;"> 🚫 There are no bikes available currently at this station. 🚫</h2>`
       : bike_type_plot(selected_station_data)}
 
-  </div>
 </div>
